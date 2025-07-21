@@ -1,6 +1,10 @@
-module Main (main) where
+module Game (
+    main
+) where
 
 import System.Random
+
+import Logic
 
 main :: IO ()
 main = do
@@ -16,6 +20,7 @@ main = do
 
     putStrLn $ playerWins guess coinToss
 
-playerWins guess coinToss
-    | (guess == coinToss) = "You win!"
-    | otherwise = "You lose :("
+    if null input
+        then putStrLn "bye!"
+        else main
+    

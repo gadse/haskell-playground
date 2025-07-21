@@ -41,9 +41,10 @@ library:
 
 executables:
   haskell-playground-exe:
-    main:                Main.hs
+    main:                Game.hs
     source-dirs:         app
     ghc-options:
+    - -main-is Game
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
