@@ -10,4 +10,4 @@ jobs:
         with:
           ghc-version: '8.8' # Resolves to the latest point release of GHC 8.8
           cabal-version: '3.0.0.0' # Exact version of Cabal
-      - run: runhaskell Hello.hs
+      - run: stack test
